@@ -32,11 +32,11 @@ public class DataController {
             {
                 temp.add(tableDatum);
             }
-            else  if((tableDatum.getNumberOfVolumes() >= filter.getFMinNumber() && tableDatum.getNumberOfVolumes() <= filter.getFMinNumber() && radioButton.equals("by number")))
+            else  if((tableDatum.getNumberOfVolumes() >= filter.getFMinNumber() && tableDatum.getNumberOfVolumes() <= filter.getFMaxNumber() && radioButton.equals("by number")))
             {
                 temp.add(tableDatum);
             }
-            else  if((tableDatum.getCirculation() >= filter.getFMaxCirculation() && tableDatum.getCirculation() <= filter.getFMaxCirculation() && radioButton.equals("by circulation")))
+            else  if((tableDatum.getCirculation() >= filter.getFMinCirculation() && tableDatum.getCirculation() <= filter.getFMaxCirculation() && radioButton.equals("by circulation")))
             {
                 temp.add(tableDatum);
             }
